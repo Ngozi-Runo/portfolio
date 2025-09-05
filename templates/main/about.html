@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - Portfolio{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-5">About Me</h1>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <img src="{% load static %}{% static 'images/profile/pix.jpg' %}" alt="Moses Otiti" class="rounded-circle mx-auto d-block" style="width: 200px; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Hello, I'm Cloud Engineer</h2>
+                        <p class="lead">Hi, I'm Moses Otiti, a 
+Cloud Engineer.
+
+I am a passionate Cloud Engineer with Experience in AWS Cloud computing, Linux Administration and Python Programming.
+</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h3>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Postgraduate Diploma in Education (PGDE), Higher National Diploma (HND) certificate in Chemical Enginering, Certificate in Cloud Engineer</h5>
+                                <p class="card-text text-muted">National Teachers Institute Kaduna, Kaduna Polytechnic • 2016-2017; 2009-2012</p>
+                                <p class="card-text">Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <h3><i class="fas fa-briefcase text-primary me-2"></i>Experience</h3>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud Engineer, Linux Administrator, python programming</h5>
+                                <p class="card-text text-muted">Tech Company • 2022-Present</p>
+                                <p class="card-text">Cloud Infrastructure Management: Design, deploy, and manage cloud resources (servers, storage, networking) on platforms like AWS, Azure, or Google Cloud, </p>
+                                <p class="card-text">Automation & Scripting: Automate cloud operations using tools like Terraform, CloudFormation, or scripts (Python, Bash), Security & Compliance: Implement security best practices, manage IAM roles, monitor for vulnerabilities, and ensure compliance with standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h3><i class="fas fa-heart text-primary me-2"></i>What I Love</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                                    <h5>Clean Code</h5>
+                                    <p>Writing maintainable, efficient, and well-documented code that stands the test of time.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                    <h5>Collaboration</h5>
+                                    <p>Working with teams to solve complex problems and deliver exceptional results.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                                    <h5>Innovation</h5>
+                                    <p>Exploring new technologies and finding creative solutions to challenging problems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

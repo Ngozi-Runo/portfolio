@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects - Portfolio{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <h1 class="text-center mb-5">My Projects</h1>
+        <p class="text-center lead mb-5">Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.</p>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/ecommerce-platform.jpg' %}" 
+                         class="card-img-top" 
+                         alt="E-commerce Platform"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Platform</h5>
+                        <p class="card-text">A full-featured e-commerce platform built with Django and React. Features include user authentication, product catalog, shopping cart, payment processing, and admin dashboard.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-1">Django</span>
+                            <span class="badge bg-primary me-1">React</span>
+                            <span class="badge bg-primary me-1">PostgreSQL</span>
+                            <span class="badge bg-primary me-1">AWS</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/ecommerce-platform" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-ecommerce-site.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/task-management.jpg' %}" 
+                         class="card-img-top" 
+                         alt="Task Management App"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">A collaborative task management application with real-time updates. Users can create projects, assign tasks, set deadlines, and track progress with team members.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success me-1">Django</span>
+                            <span class="badge bg-success me-1">WebSockets</span>
+                            <span class="badge bg-success me-1">Redis</span>
+                            <span class="badge bg-success me-1">Bootstrap</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/task-manager" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-task-app.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/weather-app.jpg' %}" 
+                         class="card-img-top" 
+                         alt="Weather Dashboard"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">A responsive weather dashboard with location-based forecasts. Features include current weather, 7-day forecast, weather maps, and historical data visualization.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning me-1">JavaScript</span>
+                            <span class="badge bg-warning me-1">API Integration</span>
+                            <span class="badge bg-warning me-1">Chart.js</span>
+                            <span class="badge bg-warning me-1">CSS3</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/weather-dashboard" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-weather-app.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/blog-platform.jpg' %}" 
+                         class="card-img-top" 
+                         alt="Blog Platform"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Blog</h5>
+                        <p class="card-text">A modern blog platform with content management system. Features include markdown support, comment system, categories, tags, and SEO optimization.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-info me-1">Django</span>
+                            <span class="badge bg-info me-1">Markdown</span>
+                            <span class="badge bg-info me-1">SQLite</span>
+                            <span class="badge bg-info me-1">Bootstrap</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/personal-blog" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-blog.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/data-visualization.jpg' %}" 
+                         class="card-img-top" 
+                         alt="Data Visualization Dashboard"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization Tool</h5>
+                        <p class="card-text">An interactive data visualization tool for analyzing business metrics. Users can upload CSV files, create custom charts, and generate reports.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary me-1">Python</span>
+                            <span class="badge bg-secondary me-1">Pandas</span>
+                            <span class="badge bg-secondary me-1">D3.js</span>
+                            <span class="badge bg-secondary me-1">Flask</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/data-viz-tool" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-dataviz-app.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{% static 'images/projects/mobile-app.jpg' %}" 
+                         class="card-img-top" 
+                         alt="Mobile App"
+                         style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile-First Web App</h5>
+                        <p class="card-text">A progressive web application optimized for mobile devices. Features offline functionality, push notifications, and responsive design.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-dark me-1">PWA</span>
+                            <span class="badge bg-dark me-1">Service Workers</span>
+                            <span class="badge bg-dark me-1">IndexedDB</span>
+                            <span class="badge bg-dark me-1">Responsive</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Ngozi-Runo/mobile-web-app" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://your-mobile-app.com" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

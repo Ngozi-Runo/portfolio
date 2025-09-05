@@ -1,0 +1,18 @@
+[Unit]
+Description=Portfolio Django Application
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+RuntimeDirectory=gunicorn
+WorkingDirectory=/var/www/portfolio
+Environment="PATH=/var/www/portfolio/venv/bin"
+ExecStart=/var/www/portfolio/venv/bin/gunicorn --config /var/www/portfolio/gunicorn.conf.py portfolio.wsgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

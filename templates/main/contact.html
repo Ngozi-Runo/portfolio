@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact - Portfolio{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-5">Get In Touch</h1>
+                <p class="text-center lead mb-5">I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Email</h5>
+                                <p class="card-text">otitimoses@gmail.com</p>
+                                <a href="mailto:otitimoses@gmail.com" class="btn btn-primary">Send Email</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Phone</h5>
+                                <p class="card-text">+2348032937786</p>
+                                <a href="tel:+2348032937786" class="btn btn-primary">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-linkedin fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">LinkedIn</h5>
+                                <p class="card-text">Connect with me professionally</p>
+                                <a href="https://www.linkedin.com/in/moses-otiti-b4a94978" class="btn btn-primary" target="_blank">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-github fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">GitHub</h5>
+                                <p class="card-text">check out my Repositories</p>
+                                <a href="https://github.com/Ngozi-Runo" class="btn btn-primary" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">Send Me a Message</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! This is a demo form. In a real application, this would send your message.');
+});
+</script>
+{% endblock %}
